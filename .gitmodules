@@ -1,0 +1,3 @@
+[submodule "fsil"]
+	path = fsil
+	url = git@github.com:ieviev/fsil.git

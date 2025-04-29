@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/fs-rust-ts.rs/fs-rust-ts.rs.fsproj" />
+    <Project Path="src/fs-rust-ts.ts/fs-rust-ts.ts.fsproj" />
+  </Folder>
+</Solution>

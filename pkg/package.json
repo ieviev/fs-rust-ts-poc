@@ -1,0 +1,11 @@
+{
+  "name": "fs-rust-ts",
+  "version": "0.1.0",
+  "files": [
+    "rust_library_bg.wasm",
+    "rust_library.js",
+    "rust_library.d.ts"
+  ],
+  "main": "rust_library.js",
+  "types": "rust_library.d.ts"
+}

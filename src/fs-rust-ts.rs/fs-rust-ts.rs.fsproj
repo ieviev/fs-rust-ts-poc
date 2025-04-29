@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <DefineConstants>FABLE_COMPILER;FABLE_COMPILER_4;FABLE_COMPILER_RUST</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="wasm_bindgen.fs" />
+    <Compile Include="Shared.fs" />
+    <Compile Include="Rust.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="4.5.0" />
+    <ProjectReference Include="../../fsil/src/fsil/fsil.fsproj" />
+    <ProjectReference Include="../../fsil/src/fsil.rust/fsil.rust.fsproj" />
+  </ItemGroup>
+
+</Project>

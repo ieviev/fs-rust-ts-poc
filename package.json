@@ -1,0 +1,29 @@
+{
+    "name": "fs-rust-ts",
+    "version": "1.0.0",
+    "description": "now that we've gotten past the name this is an experiment to  write Typescript and Rust (wasm32) apps without writing neither Typescript or Rust but generate the whole thing from F\\#",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ieviev/fs-rust-ts.git"
+    },
+    "dependencies": {
+        "rust_library": "file:///./pkg"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ieviev/fs-rust-ts/issues"
+    },
+    "homepage": "https://github.com/ieviev/fs-rust-ts#readme",
+    "devDependencies": {
+        "esbuild": "^0.25.3",
+        "vite": "^6.3.3",
+        "vite-node": "^3.1.2",
+        "vite-plugin-top-level-await": "^1.5.0"
+    }
+}
