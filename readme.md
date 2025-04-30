@@ -4,24 +4,20 @@ this is a proof of concept to
 write Typescript and Rust (wasm32) apps with type-safe communication over wasm boundary
 by generating the whole app from F\#
 
-```
-shared definitions: src/fs-rust-ts.shared/Shared.fs
-wasm source: src/fs-rust-ts.rs/Rust.fs
-typescript (deno) app: src/fs-rust-ts.ts/Typescript.fs
-```
 
-`run_deno.sh` starts the application
-
-`watcher.fsx` contains the dev scripts
+- shared wasm bindings: `src/fs-rust-ts.ts/wasm_bindgen.fs`
+- shared api definition: `src/fs-rust-ts.ts/Shared.fs`
+- wasm source: `src/fs-rust-ts.rs/Rust.fs`
+- typescript (deno) app: `src/fs-rust-ts.ts/Typescript.fs`
 
 
 The rust side currently only works with this (experimental) fork of Fable: https://github.com/ieviev/Fable/tree/fsil
 
 This fork is: 
-1. To rather write F\#-flavored Rust than convert working F\# to Rust (so no F\# standard library at all)
-2. To prioritize extending the application to rust libraries and making existing rust code usable
+1. To write F\#-flavored Rust instead of converting F\# to Rust (no F\# standard library at all)
+2. To prioritize extending the application to rust libraries and making existing rust code usable over wasm
 
 There's a lot of work to do with bindings for it to be actually usable
 
-Another problem is that you cannot pass different DefineConstant values into a shared project
+Another problem is that you cannot pass different DefineConstant values into a shared project, so the file has to be imported directly
 
